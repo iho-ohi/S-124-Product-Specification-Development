@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:portrayalCatalog xmlns:pc="http://www.iho.int/S100PortrayalCatalog/5.2" xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-124" version="2.0.0">
+	<pixmaps/>
+	<colorProfiles>
+		<colorProfile id="837">
+			<description>
+				<name>Color Profile</name>
+				<description>Color Profile</description>
+				<language>eng</language>
+			</description>
+			<fileName>colorProfile.xml</fileName>
+			<fileType>ColorProfile</fileType>
+			<fileFormat>XML</fileFormat>
+		</colorProfile>
+	</colorProfiles>
+	<symbols>
+		<symbol id="NAVWARNF">
+			<description>
+				<name>NavigationalWarningFeaturePart</name>
+				<description>Navigational Warning Feature Part</description>
+				<language>eng</language>
+			</description>
+			<fileName>NavigationalWarningFeaturePart.svg</fileName>
+			<fileType>Symbol</fileType>
+			<fileFormat>SVG</fileFormat>
+		</symbol>
+		<symbol id="NAVWARNP">
+			<description>
+				<name>NavigationalWarningFeaturePartPoint</name>
+				<description>Navigational Warning Feature Part Point</description>
+				<language>eng</language>
+			</description>
+			<fileName>NavigationalWarningFeaturePartPoint.svg</fileName>
+			<fileType>Symbol</fileType>
+			<fileFormat>SVG</fileFormat>
+		</symbol>
+
+		<symbol id="APROXPOS">
+			<description>
+				<name>ApproximatePosition</name>
+				<description>Approximate Position</description>
+				<language>eng</language>
+			</description>
+			<fileName>ApproximatePosition.svg</fileName>
+			<fileType>Symbol</fileType>
+			<fileFormat>SVG</fileFormat>
+		</symbol>
+
+		<symbol id="QUESMRK1">
+			<description>
+				<name>QUESMRK1</name>
+				<description>QUESMRK1</description>
+				<language>eng</language>
+			</description>
+			<fileName>QUESMRK1.svg</fileName>
+			<fileType>Symbol</fileType>
+			<fileFormat>SVG</fileFormat>
+		</symbol>
+        <symbol id="EMQUESM1">
+            <description>
+                <name>EMQUESM1</name>
+                <description>Question mark symbol embedded into question mark linestyle</description>
+                <language>eng</language>
+            </description>
+            <fileName>EMQUESM1.svg</fileName>
+            <fileType>Symbol</fileType>
+            <fileFormat>SVG</fileFormat>
+        </symbol>
+	</symbols>
+    <styleSheets>
+        <styleSheet id="daySvgStyle">
+            <description>
+                <name>Day</name>
+                <description>CSS file for day palette</description>
+                <language>eng</language>
+            </description>
+            <fileName>daySvgStyle.css</fileName>
+            <fileType>StyleSheet</fileType>
+            <fileFormat>CSS</fileFormat>
+        </styleSheet>
+        <styleSheet id="duskSvgStyle">
+            <description>
+                <name>Dusk</name>
+                <description>CSS file for dusk palette</description>
+                <language>eng</language>
+            </description>
+            <fileName>duskSvgStyle.css</fileName>
+            <fileType>StyleSheet</fileType>
+            <fileFormat>CSS</fileFormat>
+        </styleSheet>
+        <styleSheet id="nightSvgStyle">
+            <description>
+                <name>Night</name>
+                <description>CSS file for night palette</description>
+                <language>eng</language>
+            </description>
+            <fileName>nightSvgStyle.css</fileName>
+            <fileType>StyleSheet</fileType>
+            <fileFormat>CSS</fileFormat>
+        </styleSheet>
+    </styleSheets>
+	<lineStyles>
+		<lineStyle id="NAVWARNL">
+			<description>
+				<name>NavigationalWarningFeaturePartLine</name>
+				<description>NavigationalWarningFeaturePartLine</description>
+				<language>eng</language>
+			</description>
+			<fileName>NavigationalWarningFeaturePartLine.xml</fileName>
+			<fileType>LineStyle</fileType>
+			<fileFormat>XML</fileFormat>
+		</lineStyle>
+        <lineStyle id="QUESMRK1">
+            <description>
+                <name>QUESMRK1</name>
+                <description>Question mark linestyle for lines unrecognized by portrayal</description>
+                <language>eng</language>
+            </description>
+            <fileName>QUESMRK1.xml</fileName>
+            <fileType>LineStyle</fileType>
+            <fileFormat>XML</fileFormat>
+        </lineStyle>
+	</lineStyles>
+	<areaFills/>
+	<fonts/>
+	<viewingGroups>
+        <viewingGroup id="24">
+            <description>
+                <name>Text: Supplementary information</name>
+                <description>Note on chart data (INFORM) or nautical publication (TXTDSC)</description>
+                <language>eng</language>
+            </description>
+        </viewingGroup>
+        <viewingGroup id="31020">
+            <description>
+                <name>nautical publication (M_NPUB)</name>
+                <description>Other: A, B - Information about the chart display</description>
+                <language>eng</language>
+            </description>
+        </viewingGroup>
+        <viewingGroup id="21010">
+			<description>
+                <name>Unknown object (magenta question mark)</name>
+                <description>Standard: A, B - Information about the chart display</description>
+				<language>eng</language>
+			</description>
+		</viewingGroup>
+	</viewingGroups>
+    <foundationMode/>
+	<viewingGroupLayers/>
+	<displayModes>
+	</displayModes>
+    <displayPlanes>
+        <displayPlane id="OverRADAR" order="1">
+			<description>
+                <name>Over radar</name>
+                <description>Content displayed on top of Radar image</description>
+				<language>eng</language>
+			</description>
+		</displayPlane>
+        <displayPlane id="UnderRADAR" order="-1">
+			<description>
+                <name>Under radar</name>
+				<description>Content displayed underneath Radar image</description>
+				<language>eng</language>
+			</description>
+		</displayPlane>
+	</displayPlanes>
+	<context>
+	  <parameter id="NationalLanguage">
+       <description>
+         <name>National language</name>
+         <description>3-letter language code. Selects preferred language for chart text.</description>
+         <language>eng</language>
+       </description>
+       <type>String</type>
+       <default>eng</default>
+	   <validate>
+		<regex>^[a-z]{3}$</regex>
+		<errorMessage>
+			<text>Must be three lower-case characters</text>
+		</errorMessage>
+	   </validate>
+     </parameter>
+	</context>
+	<rules>
+        <ruleFile id="main">
+			<description>
+				<name>main</name>
+				<description>main</description>
+                <language>eng</language>
+			</description>
+			<fileName>main.lua</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>LUA</fileFormat>
+			<ruleType>TopLevelTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="Default">
+			<description>
+			  <name>Default</name>
+			  <description>Default</description>
+			  <language>eng</language>
+			</description>
+			<fileName>Default.lua</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>lua</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		  </ruleFile>
+        <ruleFile id="NavwarnPart">
+			<description>
+				<name>NavwarnPart</name>
+				<description>NavwarnPart</description>
+                <language>eng</language>
+			</description>
+			<fileName>NavwarnPart.lua</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>LUA</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+        <ruleFile id="NavwarnAreaAffected">
+			<description>
+				<name>NavwarnAreaAffected</name>
+				<description>NavwarnAreaAffected</description>
+                <language>eng</language>
+			</description>
+			<fileName>NavwarnAreaAffected.lua</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>LUA</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		  <ruleFile id="PortrayalAPI">
+			<description>
+			   <name>PortrayalAPI</name>
+			   <description>Portrayal API</description>
+			   <language>eng</language>
+			</description>
+			<fileName>PortrayalAPI.lua</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>LUA</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		 </ruleFile>
+		 <ruleFile id="PortrayalModel">
+			<description>
+			   <name>PortrayalModel</name>
+			   <description>Portrayal Model</description>
+			   <language>eng</language>
+			</description>
+			<fileName>PortrayalModel.lua</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>LUA</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		 </ruleFile>
+        <ruleFile id="TextPlacement">
+            <description>
+                <name>TextPlacement</name>
+                <description>TextPlacement</description>
+                <language>eng</language>
+            </description>
+            <fileName>TextPlacement.lua</fileName>
+            <fileType>Rule</fileType>
+            <fileFormat>LUA</fileFormat>
+            <ruleType>SubTemplate</ruleType>
+        </ruleFile>
+		 <ruleFile id="S100Scripting">
+			<description>
+			   <name>S100Scripting</name>
+			   <description>S100 Scripting</description>
+			   <language>eng</language>
+			</description>
+			<fileName>S100Scripting.lua</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>LUA</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		 </ruleFile>
+		<ruleFile id="DataCoverage">
+			<description>
+				<name>Data Coverage</name>
+				<description>Data Coverage</description>
+                <language>eng</language>
+			</description>
+			<fileName>DataCoverage.lua</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>LUA</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		</rules>
+</pc:portrayalCatalog>
